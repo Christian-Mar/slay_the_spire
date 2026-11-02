@@ -92,18 +92,17 @@ Het gevecht (HP, schade, block, vijanden) in `slay_nicegui.py` is een eigen toev
 ## Starten
 
 Python 3.10 of hoger is nodig.
+Ga naar de file in de terminal en geef daarna één van de volgende commando's:  
 
 ### 1. Opdrachtversie (terminal)
 
 ```bash
-cd /Users/christianmarginet/Documents/slay
 python3 slay.py
 ```
 
 ### 2. Visuele terminalversie
 
 ```bash
-cd /Users/christianmarginet/Documents/slay
 python3 slay_visueel.py
 ```
 
@@ -112,7 +111,6 @@ python3 slay_visueel.py
 Eenmalig de omgeving klaarzetten:
 
 ```bash
-cd /Users/christianmarginet/Documents/slay
 python3 -m venv .venv
 .venv/bin/pip install nicegui
 ```
@@ -120,7 +118,7 @@ python3 -m venv .venv
 Starten op poort 8765 (verander het getal als die poort bezet is):
 
 ```bash
-cd /Users/christianmarginet/Documents/slay && PORT=8765 .venv/bin/python slay_nicegui.py
+PORT=8765 .venv/bin/python slay_nicegui.py
 ```
 
 Open daarna http://localhost:8765 in de browser. Stoppen kan met `Ctrl+C` in de terminal.

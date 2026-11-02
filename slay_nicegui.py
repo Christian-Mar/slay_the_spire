@@ -1,9 +1,11 @@
+# Importeer 'os' om de poort uit de omgeving te kunnen lezen
+import os
+
 # Importeer NiceGUI: het framework waarmee we een webinterface in pure Python bouwen
 from nicegui import ui
 
 # Importeer de oorspronkelijke klasse Player; de spellogica blijft dus ongewijzigd
 from slay import Player
-
 
 # Per kaartnaam: icoon, kleurverloop en een korte beschrijving
 KAARTEN = {
@@ -217,5 +219,4 @@ def hoofdpagina() -> None:
 
 # Start de server (lokaal op http://localhost:8080); PORT laat hosting-platformen de poort bepalen
 if __name__ in {"__main__", "__mp_main__"}:
-    import os
-    ui.run(title="Slay mini", port=int(os.environ.get("PORT", 8080)), reload=False, show=False)
+    ui.run(title="Slay mini", port=int(os.environ.get("PORT", "8080")), reload=False, show=False)

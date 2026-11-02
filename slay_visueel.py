@@ -1,7 +1,6 @@
 # Importeer de oorspronkelijke klasse Player uit slay.py, zodat we daarop kunnen verderbouwen
 from slay import Player
 
-
 # ANSI-kleurcode voor rood (werkt in de meeste terminals, ook in VS Code)
 ROOD = "\033[91m"
 # ANSI-kleurcode voor blauw
